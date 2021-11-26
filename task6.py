@@ -1,18 +1,24 @@
 # ; Напишите программу, принимающую у пользователя ввод построчно количества слов n и далее всех слов построчно, 
 # ; и, выводящую построчно количество уникальных слов, а далее количество повторений каждого слова в порядке их поступления от пользователя.
 
-n = int(input().strip())
+n = int(input("N=").strip())
 wordlist = []
+wordcount = []
+
 for i in range(0,n):
     word = input().strip()
     wordlist.append(word)
 
+print ("Количество уникальных слов = "+str(len(set(wordlist))))
 
-wordset = set(wordlist)
-wordsetlist = list(wordset)
+wordlistcopy = []
 
-print (wordlist)
-print (len(wordset))
-print (wordsetlist)
-for elem in wordsetlist:
-    print (elem, "встречается раз",wordlist.count(wordsetlist[elem]))
+for word in wordlist:
+    if word in wordlistcopy:
+        next
+    else:
+        wordlistcopy.append(word)
+        wordcount.append(wordlist.count(word))
+
+
+print ("Кол-во повторений слов",wordcount)
