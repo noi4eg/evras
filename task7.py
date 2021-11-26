@@ -2,12 +2,11 @@
 
 # Например для n=6 результат будет 6+4+2=12.
 
-n = 6
-# n = int(input())
-i = 0
+n = int(input())
 sum = 0
-while n > 0:
-    n -= i*2
-    sum += n
-    i +=1
+
+for i in range(n,0,-2):
+    sum += i
+
 print (sum)
+
