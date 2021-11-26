@@ -5,7 +5,7 @@
 # где вместо  *Фамилия* *Имя* *Отчество* будут введенные ранее имя, отчество и фамилия.  
 
 def print_full_name(name, middle_name, surname):
-   print ("Здравствуйте,",surname,name,middle_name,"! Вы только что закончили пятое упражнение!")
+   print ("Здравствуйте, "+surname,name,middle_name +"! Вы только что закончили пятое упражнение!")
  
 if __name__ == '__main__':
    name = input()
