@@ -22,10 +22,8 @@ def fib_rec(n):
         return n
     return fib_rec(n-1) + fib_rec(n-2)
 
-try:
-    n = int(input().strip())
-except ValueError:
-    n = 5
+
+n = int(input().strip())
 
 print (fib(n))
 print (fib_rec(n))
